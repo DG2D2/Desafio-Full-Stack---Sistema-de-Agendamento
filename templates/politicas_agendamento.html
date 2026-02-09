@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/politicas_agendamento.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='java_script/script.js')}}">
+
+    </script>   
+</head>
+<body>
+    <div class="container-principal">
+        <h1 class="titulo1">Olá, bem vindo ao sistema de agendamento online!</h1>
+    
+        <div class="caixa-maior">
+            <h2 class="titulo2">Políticas de Agendamento</h2>
+    
+            <p class="politicas">1 - O horário de atendimento é das 8h às 18h, de segunda a sexta-feira.</p>
+            <p class="politicas">2 - Consultas não podem ser marcadas em finais de semana ou feriados, apenas em dias úteis.</p>
+            <p class="politicas">3 - Consultas devem durar no máximo 1 hora.</p>
+            <p class="politicas">4 - Consultas não podem ser marcadas em horários já ocupados.</p>
+            
+            <a href="{{ url_for('agendamento') }}">
+                <button class="botao-navegador">Ir Para Agendamaento</button>
+            </a>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
