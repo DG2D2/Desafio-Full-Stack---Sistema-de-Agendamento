@@ -2,7 +2,7 @@ from flask import Flask
 import sqlite3
 
 app = Flask(__name__)
-app.secret_key = '12345'  # Necessário para flash messages
+app.secret_key = '*****'
 
 def conectar_db():
     conectar = sqlite3.connect('agendamento.db')
